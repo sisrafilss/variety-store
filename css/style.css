@@ -60,6 +60,11 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+/* Star rating color */
+.fill-star {
+  color: rgb(250, 202, 81);
+}
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
