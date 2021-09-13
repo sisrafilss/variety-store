@@ -1,3 +1,4 @@
+/* ============= Utilitites =============== */
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
@@ -5,32 +6,71 @@ body {
 .store-name {
   font-family: 'Pacifico', cursive;
 }
-.search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
-}
-.search-field:hover {
-  outline: none;
-  border: none;
-}
-.search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+
+.site-btn {
+  background-color: #297F87;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
   border-radius: 5px;
+}
+.site-btn:hover {
+  background-color: rgb(119, 136, 144);
+  color: #fff;
+}
+
+.secondary-btn {
+  background-color: #6B7AA1;
+  color: rgba(247, 248, 251, 0.993);
+  font-weight: 600;
+  border-radius: 5px;
+}
+.secondary-btn:hover {
+  background-color: #98a2bb;
+  color: #fff;
+}
+
+.btn-detail {
+  background-color: #DF2E2E;
+  color: rgba(247, 248, 251, 0.993);
+  font-weight: 600;
+  border-radius: 5px;
+}
+.btn-detail:hover {
+  background-color: #bb2929;
+  color: #fff;
+}
+
+/* ====================== Serach Area ============== */
+.search-field {
+  /* border: none; */
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 30px;
+  outline: none;
+}
+/* .search-field:hover {
+  outline: none;
+  border: none;
+} */
+.search-box {
+  /* border: 1px solid rgb(3, 118, 211); */
+  width: 333px;
+  /* border-radius: 5px; */
   margin: auto;
   margin-top: 20px;
-  border-right: none;
+  /* border-right: none; */
 }
 .search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+  padding: 7px 30px;
+  /* border-radius: 25px; */
+  margin-left: -5px;
 }
+
+/* ======================= Product Cards =============== */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
   /* border: 1px solid black; */
   text-align: center;
   width: 100%;
@@ -51,6 +91,11 @@ body {
   width: 150px;
   height: 150px;
 }
+/* Star rating color */
+.fill-star {
+  color: rgb(250, 202, 81);
+}
+/* ===================== Products Cart ================== */
 .cart {
   width: 350px;
   /* border: 1px solid green; */
@@ -63,11 +108,8 @@ body {
 .cart-main {
   padding-right: 30px;
 }
-/* Star rating color */
-.fill-star {
-  color: rgb(250, 202, 81);
-}
 
+/*================== Media Query ============= */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
