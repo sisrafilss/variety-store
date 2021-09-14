@@ -113,7 +113,6 @@ const starRating = rating => {
       stars = stars + '<i class="far fa-star"></i>';
     }
   }
-  console.log(`Full Star: ${fullStar}, Partial Star: ${partialStar}, Empty Star: ${emptyStar}`);
   return stars;
 }
 
